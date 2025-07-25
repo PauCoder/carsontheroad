@@ -1,0 +1,7 @@
+
+{
+  "name": "carsontheroad.com",
+  "description": "Eine Webanwendung zur Überprüfung der Anzahl zugelassener Fahrzeuge in Deutschland basierend auf HSN/TSN oder Marke/Modell. Verwendet simulierte Daten.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
