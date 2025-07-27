@@ -1,4 +1,4 @@
-import React, { useState, FormEvent, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SearchIcon } from './icons/SearchIcon';
 import type { SearchFilters } from '../types';
 import { 
@@ -77,7 +77,7 @@ export const VehicleSearchForm: React.FC<VehicleSearchFormProps> = ({ onSearch, 
     setVariant(""); 
   }, [make, baseModel]);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (searchType === 'hsnTsn') {
       onSearch({ type: 'hsnTsn', hsn, tsn });
