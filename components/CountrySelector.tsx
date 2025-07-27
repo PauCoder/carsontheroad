@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
-import { MapPinIcon } from './icons/MapPinIcon'; 
-import { ChevronDownIcon } from './icons/ChevronDownIcon'; // Assuming this exists or will be created
-import { COUNTRY_OPTIONS, CountryOption } from '../constants';
+import { useLanguage } from '../contexts/LanguageContext.tsx';
+import { MapPinIcon } from './icons/MapPinIcon.tsx'; 
+import { ChevronDownIcon } from './icons/ChevronDownIcon.tsx';
+import { COUNTRY_OPTIONS, CountryOption } from '../constants.ts';
 
 
 interface CountrySelectorProps {

@@ -1,7 +1,5 @@
-
-import React from 'react';
-import type { RegistrationHistoryPoint } from '../types';
-import { useLanguage } from '../contexts/LanguageContext';
+import type { RegistrationHistoryPoint } from '../types.ts';
+import { useLanguage } from '../contexts/LanguageContext.tsx';
 
 interface RegistrationTableProps {
   history: RegistrationHistoryPoint[];

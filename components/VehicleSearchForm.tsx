@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { SearchIcon } from './icons/SearchIcon';
-import type { SearchFilters } from '../types';
+import { SearchIcon } from './icons/SearchIcon.tsx';
+import type { SearchFilters } from '../types.ts';
 import { 
   getUniqueFuelTypes, 
   POWER_KW_RANGES, 
   getUniqueMakes, 
   getUniqueBaseModelsForMake,
   getUniqueCommercialNamesForMakeAndBaseModel
-} from '../constants';
-import { useLanguage } from '../contexts/LanguageContext';
+} from '../constants.ts';
+import { useLanguage } from '../contexts/LanguageContext.tsx';
 
 
 export type SearchType = 'hsnTsn' | 'makeModel';

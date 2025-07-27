@@ -1,8 +1,6 @@
-
-import React from 'react';
-import type { VehicleData } from '../types';
-import { MIXED_DATA_KEY, NOT_APPLICABLE_KEY } from '../constants';
-import { useLanguage } from '../contexts/LanguageContext';
+import type { VehicleData } from '../types.ts';
+import { MIXED_DATA_KEY, NOT_APPLICABLE_KEY } from '../constants.ts';
+import { useLanguage } from '../contexts/LanguageContext.tsx';
 // import { WheelIcon } from './icons/WheelIcon'; // WheelIcon is no longer used
 
 

@@ -1,16 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useLanguage, Locale } from '../contexts/LanguageContext';
-import { GermanFlagIcon } from './icons/GermanFlagIcon';
-import { BritishFlagIcon } from './icons/BritishFlagIcon';
-import { SpanishFlagIcon } from './icons/SpanishFlagIcon';
-import { FrenchFlagIcon } from './icons/FrenchFlagIcon';
-import { ItalianFlagIcon } from './icons/ItalianFlagIcon';
-
-const ChevronDownIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" {...props}>
-    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-  </svg>
-);
+import { useLanguage, Locale } from '../contexts/LanguageContext.tsx';
+import { GermanFlagIcon } from './icons/GermanFlagIcon.tsx';
+import { BritishFlagIcon } from './icons/BritishFlagIcon.tsx';
+import { SpanishFlagIcon } from './icons/SpanishFlagIcon.tsx';
+import { FrenchFlagIcon } from './icons/FrenchFlagIcon.tsx';
+import { ItalianFlagIcon } from './icons/ItalianFlagIcon.tsx';
+import { ChevronDownIcon } from './icons/ChevronDownIcon.tsx';
 
 const getFlagForLocale = (locale: Locale): React.FC<React.SVGProps<SVGSVGElement>> => {
   switch (locale) {

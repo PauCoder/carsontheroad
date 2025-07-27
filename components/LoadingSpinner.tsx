@@ -1,5 +1,4 @@
-import React from 'react';
-import { useLanguage } from '../contexts/LanguageContext';
+import { useLanguage } from '../contexts/LanguageContext.tsx';
 
 export const LoadingSpinner: React.FC = () => {
   const { t } = useLanguage();

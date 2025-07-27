@@ -1,10 +1,8 @@
-
-import React from 'react';
-import type { VehicleData } from '../types';
-import { CarIcon } from './icons/CarIcon'; 
-import { CollectionIcon } from './icons/CollectionIcon';
-import { useLanguage } from '../contexts/LanguageContext';
-import { NOT_APPLICABLE_KEY, MIXED_DATA_KEY } from '../constants';
+import type { VehicleData } from '../types.ts';
+import { CarIcon } from './icons/CarIcon.tsx'; 
+import { CollectionIcon } from './icons/CollectionIcon.tsx';
+import { useLanguage } from '../contexts/LanguageContext.tsx';
+import { NOT_APPLICABLE_KEY, MIXED_DATA_KEY } from '../constants.ts';
 
 
 interface VehicleResultListItemProps {
