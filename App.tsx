@@ -1,19 +1,18 @@
-
 import React, { useState, useCallback, useEffect } from 'react';
-import { VehicleSearchForm, SearchCriteria } from './components/VehicleSearchForm';
-import { VehicleInfoDisplay } from './components/VehicleInfoDisplay';
-import { LoadingSpinner } from './components/LoadingSpinner';
-import { FramedCarGraphIcon } from './components/icons/FramedCarGraphIcon'; 
-import { CarIcon } from './components/icons/CarIcon'; 
-import { RegistrationChart } from './components/RegistrationChart';
-import { RegistrationTable } from './components/RegistrationTable';
-import { VehicleResultListItem } from './components/VehicleResultListItem';
-import { LanguageSelector } from './components/LanguageSelector';
-import { CountrySelector } from './components/CountrySelector';
-import { findVehicleByHsnTsn, findVehiclesByMakeModel } from './services/kbaDataService';
-import { createAggregatedVehicleData } from './services/aggregationService';
-import type { VehicleData } from './types';
-import { useLanguage } from './contexts/LanguageContext';
+import { VehicleSearchForm, SearchCriteria } from './components/VehicleSearchForm.tsx';
+import { VehicleInfoDisplay } from './components/VehicleInfoDisplay.tsx';
+import { LoadingSpinner } from './components/LoadingSpinner.tsx';
+import { FramedCarGraphIcon } from './components/icons/FramedCarGraphIcon.tsx'; 
+import { CarIcon } from './components/icons/CarIcon.tsx'; 
+import { RegistrationChart } from './components/RegistrationChart.tsx';
+import { RegistrationTable } from './components/RegistrationTable.tsx';
+import { VehicleResultListItem } from './components/VehicleResultListItem.tsx';
+import { LanguageSelector } from './components/LanguageSelector.tsx';
+import { CountrySelector } from './components/CountrySelector.tsx';
+import { findVehicleByHsnTsn, findVehiclesByMakeModel } from './services/kbaDataService.ts';
+import { createAggregatedVehicleData } from './services/aggregationService.ts';
+import type { VehicleData } from './types.ts';
+import { useLanguage } from './contexts/LanguageContext.tsx';
 
 type SearchStatus = 'initial' | 'loading' | 'found' | 'notFound' | 'error';
 
