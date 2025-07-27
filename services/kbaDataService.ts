@@ -1,5 +1,5 @@
-import { MOCK_VEHICLE_DATA, POWER_KW_RANGES } from '../constants';
-import type { VehicleData, SearchFilters } from '../types';
+import { MOCK_VEHICLE_DATA, POWER_KW_RANGES } from '../constants.ts';
+import type { VehicleData, SearchFilters } from '../types.ts';
 
 /**
  * Simuliert das Abrufen von Fahrzeugdaten basierend auf HSN und TSN.
