@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>carsontheroad.com - Fahrzeugbestand prüfen</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./index.css">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -20,17 +21,12 @@
       outline-offset: 2px;
     }
   </style>
-<script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/"
-  }
-}
-</script>
-  <!-- Add Babel Standalone for in-browser JSX/TSX transpilation -->
+
+  <!-- Load React, ReactDOM for UMD globals, and Babel for in-browser transpilation -->
+  <script src="https://unpkg.com/react@19.1.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@19.1.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID"></script>
   <script>
@@ -41,10 +37,27 @@
     gtag('config', 'YOUR_MEASUREMENT_ID');
   </script>
   <!-- End Google Analytics -->
+  <!-- The importmap is removed as it's not needed when using UMD scripts and Babel's module loader -->
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <div id="root"></div>
-  <!-- Changed script type to "text/babel" and added data-type="module" to enable in-browser transpilation -->
-  <script type="text/babel" data-type="module" src="/index.tsx"></script>
+  <!-- 
+    This script tag uses Babel to transpile and run our application.
+    - type="text/babel" tells Babel to process this script.
+    - src="./index.tsx" is the entry point of our app.
+    - data-presets="react,typescript" enables JSX and TypeScript transpilation.
+    - data-type="module" activates Babel's own module loader to handle imports/exports between your files.
+    This setup fixes the module loading errors in a static hosting environment.
+  -->
+  <script type="text/babel" src="./index.tsx" data-presets="react,typescript" data-type="module"></script>
 </body>
 </html>
