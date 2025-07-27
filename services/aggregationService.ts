@@ -1,10 +1,10 @@
-import type { VehicleData, RegistrationHistoryPoint } from '../types';
+import type { VehicleData, RegistrationHistoryPoint } from '../types.ts';
 import { 
     AGGREGATED_HSN, 
     AGGREGATED_TSN,
     MIXED_DATA_KEY,
     NOT_APPLICABLE_KEY
-} from '../constants';
+} from '../constants.ts';
 
 function getConsolidatedValue<T>(values: (T | undefined | null)[], mixedKey: string, notApplicableKey: string): T | null | string {
     const validValues = values.filter(v => v !== undefined && v !== null && v !== '') as T[];
