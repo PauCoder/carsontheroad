@@ -29,6 +29,8 @@
   }
 }
 </script>
+  <!-- Add Babel Standalone for in-browser JSX/TSX transpilation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_MEASUREMENT_ID"></script>
   <script>
@@ -39,10 +41,10 @@
     gtag('config', 'YOUR_MEASUREMENT_ID');
   </script>
   <!-- End Google Analytics -->
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-gray-100 text-gray-800">
   <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+  <!-- Changed script type to "text/babel" and added data-type="module" to enable in-browser transpilation -->
+  <script type="text/babel" data-type="module" src="/index.tsx"></script>
 </body>
 </html>
