@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const GermanFlagIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5 3" {...props} aria-hidden="true">
     <rect width="5" height="3" y="0" fill="#000000"/> {/* Black */}

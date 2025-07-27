@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Icon for representing a collection or aggregated item
 export const CollectionIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg 

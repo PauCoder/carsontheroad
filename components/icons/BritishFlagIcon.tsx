@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Simplified Union Jack representation
 export const BritishFlagIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" {...props} aria-hidden="true">
