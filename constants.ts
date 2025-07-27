@@ -1,4 +1,4 @@
-import type { VehicleData, RegistrationHistoryPoint } from './types';
+import type { VehicleData, RegistrationHistoryPoint } from './types.ts';
 
 /**
  * Generates a 5-year quarterly registration history leading up to a final count and date.
